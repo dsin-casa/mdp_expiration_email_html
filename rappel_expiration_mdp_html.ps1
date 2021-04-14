@@ -65,7 +65,7 @@ foreach ($user in $users)
 #write-host $users.mail
 #write-host $user.ExpiryDate
 
-     if ([datetime]::FromFileTime((Get-ADUser -Identity $user.name -Properties "msDS-UserPasswordExpiryTimeComputed")."msDS-UserPasswordExpiryTimeComputed"))
+     if ([datetime]::FromFileTime((Get-ADUser -Identity $user.SamAccountName -Properties "msDS-UserPasswordExpiryTimeComputed")."msDS-UserPasswordExpiryTimeComputed"))
      {
         $usrmail = $user.mail
 

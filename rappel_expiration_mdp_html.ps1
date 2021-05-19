@@ -4,7 +4,7 @@ $MSender = "no-reply@domain.local"
 #email correspondant cc
 $MSender_final="support.informatique@domain.local"
 #$cc= "support.informatique@domain.local"
-# Addresse IP ou nom du serveur DHCP
+# Addresse IP ou nom du serveur SMTP
 $MServer = "smtp.domain.local"
 # Chemin de recherche Annuaire Active Directory
 $Ldappath = "OU=Utilisateurs,DC=domain,DC=local"
